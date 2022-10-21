@@ -1,4 +1,5 @@
 import "./App.css";
+import logo from "./logo.svg"
 
 import React, { useState } from "react";
 import DayNightToggle from "react-day-and-night-toggle";
@@ -29,7 +30,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>
+          Home automata
+        </h1>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <div className="btn-wrap">
+          Control your light from a far.
+        </div>
         <DayNightToggle
           onChange={() => {
             setIsDarkMode(!isDarkMode);
